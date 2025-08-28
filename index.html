@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckIT</title>
+</head>
+<body>
+    <header>
+        <h1>CheckIT</h1>
+        <p>Organiza tus pendientes de forma facil </p>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#tareas">Tareas</a>
+            <a href="#pendientes">Pendientes</a>
+        </nav>
+    </header>
+    
+    <!--Contenido principal-->
+    <main>
+        <!--SECCION inicio-->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Total de tareas: <span id='totalTareas'>0</span></p>
+            <p> Completadas: <span id='tareasCompletadas'>0</span></p>
+            <p>Pendientes: <span id='tareasPendientes'>0</span></p>
+        </section>
+
+        <!--SECCION Tareas-->
+        <section id="tareas">
+            <h2>Tareas</h2>
+            <input type="text" id="nuevaTarea" placeholder="Escribe tu tarea...">
+            <button id="btnAgregar">Agregar </button>
+            <ul id="listaTareas"></ul>
+        </section>
+
+        <!--SECCION pendiente-->
+        <section id="pendientes">
+            <h2>Tareas pendientes: </h2>
+            <ul id="listaPendientes"></ul>
+        </section>
+    </main>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <p>© 2025 CheckIT | Tu organizador de tareas </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
